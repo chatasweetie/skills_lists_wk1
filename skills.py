@@ -23,9 +23,7 @@ def all_odd(number_list):
     """
     odd_list = []
     for num in number_list:
-        if num % 2 == 0:
-            pass
-        else:
+        if num % 2 == 1:
             odd_list.append(num)
 
     return odd_list
@@ -103,6 +101,7 @@ def smallest_int(number_list):
         True
 
     """
+
     if number_list == []:
         return None
     current_smallest = number_list[0]
